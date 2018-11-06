@@ -1,0 +1,314 @@
+.align-center {
+	margin: 0 auto;
+}
+
+.force-align-center {
+  margin: 0 auto!important; 
+}
+
+
+
+.stripe_1 {
+  padding: 1px * @unit 0;
+}
+
+.stripe_2 {
+  padding: 2px * @unit 0;
+}
+
+.stripe_3 {
+  padding: 3px * @unit 0;
+}
+
+.stripe_4 {
+  padding: 4px * @unit 0;
+}
+
+.stripe_5 {
+  padding: 5px * @unit 0;
+}
+
+.stripe_6 {
+  padding: 6px * @unit 0;
+}
+
+.stripe_7 {
+  padding: 7px * @unit 0;
+}
+
+.stripe_8 {
+  padding: 8px * @unit 0;
+}
+
+.stripe_9 {
+  padding: 9px * @unit 0;
+}
+
+.stripe_10 {
+  padding: 10px * @unit 0;
+}
+
+.stripe_11 {
+  padding: 11px * @unit 0;
+}
+
+.stripe_12 {
+  padding: 12px*@unit 0;
+}
+
+
+.inner_1 {
+  padding: 0 1px * @unit;
+}
+
+.inner_2 {
+  padding: 0 2px * @unit;
+}
+
+.inner_3 {
+  padding: 0 3px * @unit;
+}
+
+.inner_4 {
+  padding: 0 4px * @unit;
+}
+
+.inner_5 {
+  padding: 0 5px * @unit;
+}
+
+.inner_6 {
+  padding: 0 6px * @unit;
+}
+
+.inner_7 {
+  padding: 0 7px * @unit;
+}
+
+.inner_8 {
+  padding: 0 8px * @unit;
+}
+
+.inner_9 {
+  padding: 0 9px * @unit;
+}
+
+.inner_10 {
+  padding: 0 10px * @unit;
+}
+
+.inner_11 {
+  padding: 0 11px * @unit;
+}
+
+.inner_12 {
+  padding: 0 12px*@unit;
+}
+
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.no-float {
+  float: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+  position: relative; 
+}
+
+.inline-block {
+  display: inline-block;
+  position: relative; 
+}
+
+.is-hidden {
+  display: none;
+}                 
+
+.is-visible {
+  display: block;
+}   
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.borderradius--small {
+  border-radius: 4px;
+}
+
+.borderradius--large{
+  border-radius: 8px;
+}
+
+.borderradius--circle{
+  border-radius: 50em;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.spacer-title {
+  width: 6*@u;
+}
+
+.spacer {
+  height: 3*@u;
+  background-color: @brandSecondary;
+  position: relative;
+  overflow: hidden;     
+
+  &:before {
+    background-color: @brandSecondaryAlt;
+    content: '';
+    right: 0;
+    position: absolute;
+    width: @u;
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+.spacer-left {
+  &:before {
+    width: @u;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.spacer-1 { width: @u }
+.spacer-2 { width: 2*@u }
+.spacer-3 { width: 3*@u }
+.spacer-4 { width: 4*@u }
+.spacer-5 { width: 5*@u }
+.spacer-6 { width: 6*@u }
+.spacer-7 { width: 7*@u }
+.spacer-8 { width: 8*@u }
+
+.mr-column {
+  text-align: right;
+}
+
+.spacer-top {
+  width: 5*@u;
+
+  &:before {
+    height: @u;
+    width: 100%;
+    top: 0;
+  }
+
+  &.spacer-1 { height: @u }
+  &.spacer-2 { height: 2*@u }
+  &.spacer-3 { height: 3*@u }
+  &.spacer-4 { height: 4*@u }
+  &.spacer-5 { height: 5*@u }
+  &.spacer-6 { height: 6*@u }
+  &.spacer-7 { height: 7*@u }
+  &.spacer-8 { height: 8*@u }
+}
+
+.spacer-bottom {
+  width: 5*@u;
+
+  &:before {
+    height: @u;
+    width: 100%;
+    bottom: 0;
+  }
+
+  &.spacer-1 { height: @u }
+  &.spacer-2 { height: 2*@u }
+  &.spacer-3 { height: 3*@u }
+  &.spacer-4 { height: 4*@u }
+  &.spacer-5 { height: 5*@u }
+  &.spacer-6 { height: 6*@u }
+  &.spacer-7 { height: 7*@u }
+  &.spacer-8 { height: 8*@u }
+}
+
+.spacers-horizonal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 4*@u;
+}
+  
+.spacers-left {
+  margin-right: 8*@u;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.spacers-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.spacer-vertical {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin-right: -2*@u;
+}
+
+.spacer-vertical-group {
+  display: flex;
+  .mq-screen-md-min({
+    margin-bottom: 2*@u;
+  });
+}
+
+.spacer-vertical-bottom {
+  .spacer-vertical-group {
+    align-items: flex-end;
+  }
+
+  .mq-screen-md-min({
+    margin-top: 7*@u;
+  });
+}
+
+.bg-white {
+  background-color: #fff;
+}
