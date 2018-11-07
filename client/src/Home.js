@@ -16,7 +16,7 @@ class Home extends Component {
   render() {
     return (
       <div className="stripe-lrg">
-        <h1 className="fontSize4">hello world</h1>    
+        <h1 className="fontSize4">hello world again</h1>    
       </div>
     );
   }
