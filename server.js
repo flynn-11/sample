@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 80;
 
 // API calls
 app.get('/api/hello', (req, res) => {
@@ -11,7 +11,7 @@ app.get('/api/hello', (req, res) => {
 
 
   // Serve any static files
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  //app.use(express.static(path.join(__dirname, 'client/build')));
 
   // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
