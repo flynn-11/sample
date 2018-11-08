@@ -50,6 +50,10 @@ class App extends Component {
               )}/>
 
               <Route component={NotFound} />
+
+              <Route exact path="/test" render={()=>(
+                <div>Testing this test route to make sure it work...</div>
+              )}/>
             </Switch>
           </div>
         </BrowserRouter>
