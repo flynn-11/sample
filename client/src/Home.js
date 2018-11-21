@@ -13,8 +13,13 @@ class Home extends Component {
   }
 
   componentWillMount(){
-    fetch('/testip') // or whatever URL you want
-      .then((response) => console.log(response))
+    fetch('/testip')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(JSON.stringify(myJson));
+    });
   }
 
 
