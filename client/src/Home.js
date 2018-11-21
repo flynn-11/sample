@@ -12,6 +12,11 @@ class Home extends Component {
     
   }
 
+  componentWillMount(){
+    fetch('/testip') // or whatever URL you want
+      .then((response) => console.log(response))
+  }
+
 
   render() {
     return (
